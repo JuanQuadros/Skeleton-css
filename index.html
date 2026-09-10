@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto com Skeleton</title>
+    <!-- 1. Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- 2. Skeleton CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- layot dividido -->
+        <div class="row">
+            <div class="six columns">
+                <h3>Coluna da Esquerda</h3>
+                <p>Também ocupa 6 das 12 colunas disponíveis.</p>
+                <a class="button" href="#">Entrar</a>
+            </div>
+            <div class="six columns">
+                <h3>Coluna da direta</h3>
+                <p>Também ocupa 6 das 12 colunas disponíveis.</p>
+                <button class="button-primary">Entrar</button>
+            </div>
+        </div>
+        <!-- Formulario --><hr>
+        <form action="#">
+            <div class="row">
+                <div class="six columns">
+                    <label for="nomeInput">Seu Nome</label>
+                    <input class="u-full-width" type="text" placeholder="Nome completo" id="nomeInput">
+                </div>
+                <div class="six columns">
+                    <label for="mensagemInput">Mensagem</label>
+                    <input class="u-full-width" type="email" placeholder="email@exemplo.com" id="emailInput">
+                </div>
+            </div>
+            <label for="mensagemInput">Mansagem</label>
+            <textarea class="u-full-width" placeholder="Escreva uma mensagem" id="mensagemInput"></textarea>
+            <input class="button-primary" type="submit" value="Enviar">
+        </form>
+        <!-- tabelas --><hr>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Silva</td>
+                    <td>Desenvolvedora</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Carlos Souza</td>
+                    <td>Designer</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- formulario de login centralizado --><hr>
+        <div class="row">
+            <div class="eight columns offset-by-two">
+                <h3>Área de login</h3>
+                <form action="submit">
+                    <label for="usuario">Usuário</label>
+                    <input class="u-full-width" type="text" name="usuario" id="usuario">
+                    
+                    <label for="senha">Senha</label>
+                    <input class="u-full-width" type="password" name="senha" id="senha">
+
+                    <input class="button-primary u-full-width" type="submit" value="Entrar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
