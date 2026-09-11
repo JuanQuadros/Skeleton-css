@@ -1,46 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="eight columns offset-by-two">
+        <h2>Formulário</h2>
+        <label for="nome">Nome</label>
+        <input type="text" class="u-full-width" id="nome">
+        <label for="email">Email</label>
+        <input type="email" class="u-full-width" id="email">
+
+        <button class="button u-full-width">Cancelar</button>
+        <button class="button-primary u-full-width">Enviar</button>
       </div>
     </div>
-  </div>
+  <hr>
+  <div class="row">
+    <div class="eight columns offset-by-two">
+      <h2>Cadastro</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Matrícula</th>
+            <th>Curso</th>
+          </tr>
+        </thead>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <tbody>
+          <tr>
+            <td>Maria</td>
+            <td>25</td>
+            <td>12345</td>
+            <td>Engenharia</td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <td>João</td>
+            <td>30</td>
+            <td>67890</td>
+            <td>Medicina</td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <td>Vitor</td>
+            <td>28</td>
+            <td>11111</td>
+            <td> Direito</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="eight columns offset-by-two">
+      <hr>
+      <h2>Noticias</h2>
+      <p style="text-align: justify;">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p style="text-align: justify;">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p style="text-align: justify;">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="eight columns offset-by-two">
+    <h4>Deseja continuar?</h4>
+    <button class="button">Cancelar</button>
+    <button class="button-primary">Enviar</button>
+
+    <h4>Listas</h4>
+    <ol>Lista ordenada
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    <ul>Lista não ordenada
+      <li>Feijao</li>
+      <li>Arroz</li>
+      <li>Carne</li>
+        <ul>
+          <li>Picanha</li>
+          <li>Maminha</li>
+        </ul>
+      <li>Macarrão</li>
+    </ul>
+    <hr>
+    <h4>Codigo inlinha</h4>
+    <pre>
+      <code style ="background-color: black; color: white; padding: 10px;">
+        function ola(nome){
+          return "Olá";
+        }
+      </code>
+    </pre>
+  </div>
 </body>
 </html>
